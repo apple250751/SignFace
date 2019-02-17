@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.kuma.facesignteacher.Activity.TeacherActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/couse"
+        android:layout_toStartOf="@+id/couse"
+        android:text="課程：" />
+
+    <Spinner
+        android:id="@+id/couse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/student_listView"
+        android:layout_toEndOf="@+id/course_textView" />
+
+    <Button
+        android:id="@+id/load_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/textView2"
+        android:layout_gravity="right"
+        android:text="讀取課程" />
+
+    <TextView
+        android:id="@+id/id_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:text="輸入學號："
+        tools:layout_editor_absoluteX="291dp"
+        tools:layout_editor_absoluteY="426dp" />
+
+    <EditText
+        android:id="@+id/id_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/id_textView"
+        android:layout_toEndOf="@+id/id_textView"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+
+    <TextView
+        android:id="@+id/name_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_input"
+        android:layout_marginTop="30dp"
+        android:layout_toStartOf="@+id/id_input"
+        android:text="輸入名字：" />
+
+    <EditText
+        android:id="@+id/name_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/name_textView"
+        android:layout_toEndOf="@+id/name_textView"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/take_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/name_input"
+        android:layout_below="@+id/name_input"
+        android:layout_gravity="right"
+        android:layout_marginTop="0dp"
+        android:text="拍攝人臉"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="415dp" />
+
+    <Button
+        android:id="@+id/set_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/take_button"
+        android:layout_alignTop="@+id/take_button"
+        android:layout_gravity="right"
+        android:layout_marginTop="0dp"
+        android:text="上傳簽到" />
+
+</LinearLayout>
