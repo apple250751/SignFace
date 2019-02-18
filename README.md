@@ -1,5 +1,5 @@
 # SignFace
-使用Face++实现课堂人脸签到的app
+使用Face++ - Android SDK实现课堂人脸签到的app
 
 该app分为三部分：
 * 教师使用的app
